@@ -24,15 +24,22 @@
          background-repeat: repeat;
          background-size: 400px;
        }
-       #menu {
-        position: fixed;
-        top: 40px;
-        right: 40px;
-      }
-
       #section {
         width: 700px;
         float: left;
+      }
+
+      #header {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
+
+      #menu {
+        font-size: 1rem;
       }
   
       li { list-style: none; }
@@ -47,14 +54,17 @@
       .ph { font-family: 'JoseonPalace'; }
       .ph1 { text-align: center;}
       .author { text-align: right; }
+
+      #section #header + p { margin-top: 0; }
     </style>
     <title> 질투는 나의 힘 </title>
   </head>
   <body>
     <div id="section">
-        <br>
-      <h1 class="ph ph1"> 질투는 나의 힘 </h1>
-      <br>
+      <div id="header">
+        <h1 class="ph"> 질투는 나의 힘 </h1>
+        <p id="menu" class="ph"> 기형도 </p>
+      </div>
       <p class="ph ph1">아주 오랜 세월이 흐른 뒤에</p>
       <p class="ph ph1">힘없는 책갈피는 이 종이를 떨어뜨리리</p>
       <p class="ph ph1">그때 내 마음은 너무나 많은 공장을 세웠으니</p>
@@ -72,6 +82,5 @@
       <p class="ph ph1">단 한번도 스스로를 사랑하지 않았노라.</p>
     </div>
 
-    <p id="menu" class="ph"> 기형도 </p>
   </body>
 </html>
